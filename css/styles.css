@@ -1,5 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
+/*-------Color Pallete 
+#777   -- pale grey
+#969595 -- pale grey
+#5e5e5e --lighter grey
+#4d4d4d --light grey  
+#3c3c3c -- medium grey
+#2b2b2b -- dark greyt
+#171515 -- almost black
+#29292c -- dark grey
+#003399 -- bright royal blue
+#323233 -- chargoal
+#2d2d30 -- charcoal grey
+#bdbdbd -- light grey
+#F731EF -- bright purple
+#FC1B1F -- orange red
+----------*/
 
  body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -48,14 +64,11 @@ h1, h2 {
       color: #fff !important;
   }
 /*---the band----*/
-
-h1
+h1 .band
 {
-	color:#fff;
-	margin:40px 0 60px 0;
+	margin: 40px 0 60px 0;
 	font-weight:300;
 }
-
 .our-team-main
 {
 	width:100%;
@@ -69,8 +82,6 @@ h1
 	transition:0.5s;
 	margin-bottom:28px;
 }
-
-
 .our-team-main img
 {
 	border-radius:50%;
@@ -83,12 +94,10 @@ h1
 	font-size:20px;
 	font-weight:700;
 }
-
 .our-team-main p
 {
 	margin-bottom:0;
 }
-
 .team-back
 {
 	width:100%;
@@ -98,10 +107,8 @@ h1
 	left:0;
 	padding:5px 15px 0 15px;
 	text-align:left;
-	background:#FC1B1F;
-	
+	background:#FC1B1F;	
 }
-
 .team-front
 {
 	width:100%;
@@ -126,15 +133,16 @@ h1
 	bottom:-200px;
 	transition: all 0.5s ease;
 }
-
 .our-team-main:hover
 {
 	border-color:#777;
 	transition:0.5s;
 }
-
 /*---the band-END----*/
- 
+/*--------news-------*/
+.fa-angle-up{
+	color: #f5f5f5;
+}
   .bg-1 {
 	  width: 98%;
       background: #2d2d30;
@@ -163,15 +171,12 @@ h1
   }
   .btn:hover, .btn:focus {
      border: 1px solid #333;
-	background: url(file:///C|/Users/Shanda/Dropbox/images/vortex.jpg);
-     color: #ED2176;
-	 
+	background: url();
+     color: #ED2176; 
   }
-  
   .nav-tabs li a {
       color: #777;
   }
-  
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -212,22 +217,22 @@ h1
 	color: #fff;
 	padding: 4%;
 }
-  footer {
+  footer{
       background-color: #2d2d30;
       color: #f5f5f5;
       padding: 32px;
   }
-  footer a {
+  footer a{
       color: #f5f5f5;
   }
-  footer a:hover {
+  footer a:hover{
       color: #777;
       text-decoration: none;
   }  
-  .form-control {
+  .form-control{
       border-radius: 0;
   }
-  textarea {
+  textarea{
       resize: none;
   }
  @media (max-width: 600px) {
@@ -246,13 +251,10 @@ h1
 	border-radius: 12%;
 	padding: 1px;
 }
-
 .ticket {
 	background: #fff;
-	padding: 5px;
-	
+	padding: 5px;	
 }
-
 .col-sm-4 {
 	border: #333;
 }
@@ -270,34 +272,21 @@ h1
 	color: #000;
 	padding: 5%;
 }
-
 .glyphicon .glyphicon-menu-up {
 	color: #fff;
 }
-
 .splitimg {
 	margin-top: -3%;
 	position: absolute;
 	z-index: 2;
 }
-
 h4 {
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	color:#FF1111;
 }
-
-#myCarousel {
-	
-}
-
-.up-arrow {
-	
-}
-
 .social {
 	list-style: none;
 }
-
 .list-inline-item {
 	margin: 2%;
 }
@@ -307,19 +296,15 @@ h4 {
 	font-size: 3em;
 	text-shadow: 4px 4px 0px rgba(0,0,0,0.9);
 }
-
 .navbar {
 	background: rgba(0,0,0,0.3);
 	margin-top: 2%;
 }
-
 .logo {
 	font-size: 1em;
 }
-
-
 .albumbtn {
-	margin: 0;
+
 }
 
 .modal-body {
@@ -329,4 +314,12 @@ h4 {
 
 .card {
 	margin-top: 2%;
+}
+.card-title {
+	color:#ED2176;
+	font-size-adjust: auto;
+}
+.album{
+	margin-bottom: 5%;
+	border: thick #7B7DAC;
 }
