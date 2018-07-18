@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
 </head>
 <body id="albumpage" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-default nav-bar-fixed-top">
+<nav class="navbar navbar-default nav-bar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><img src="images/b&whammers.png" alt="logo" class="img-fluid rounded" width="40px"></button>
@@ -17,11 +17,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#band">BAND</a></li>
-        <li><a href="#tours">TOUR</a></li>
-		 <li><a href="#news">NEWS</a></li>
-		  <li><a href="#albumpage">MUSIC</a></li>
-        <li><a href="#contact">FAN CLUB</a></li>
+        <li><a href="index.html">BAND</a></li>
+        <li><a href="index.html">TOUR</a></li>
+        <li><a href="index.html">NEWS</a></li>
+        <li><a href="#albumpage">MUSIC</a></li>
+        <li><a href="index.html">FAN CLUB</a></li>
         <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#albumpage">ALBUMS</a></li>
@@ -37,112 +37,319 @@
     </div>
   </div>
 </nav>
-	<div class="flex-container albums">
-	<h1 class="text-center">Albums</h1>
-	<div class="container">
-	   <div class="row card-deck">
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Dark_Side_of_the_Moon.jpg" height="320" width="320" alt="tour poster">
+<div class="flex-container albums">
+  <h1 class="text-center">Albums</h1>
+  <div class="container">
+    <div class="row card-deck">
+      <div class="card bg-primary text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Dark_Side_of_the_Moon.jpg" height="320" width="320" alt="tour poster">
         <h3 class="card-title">Dark Side of the Moon</h3>
-        <p class="card-text">Released in 1993</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Wall.jpg" height="320" width="320" alt="album cover">
+        <p class="card-body">Released in 1993</p>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#moon">Songs</button>
+        <!—Track list--->
+        <div class="modal fade" id="moon">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <!-- Modal Header -->
+              <div class="modal-header text-center">
+                <h4 class="modal-title">Dark Side of the Moon</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div><!------modal-header text-center----------->
+              <div class="modal-body">
+                <ol class="text-center">
+                  <li>Speak to Me</li>
+                  <li>On the Run</li>
+                  <li>Time</li>
+                  <li>The Great Gig in the Sky</li>
+                  <li>Money</li>
+                  <li>Us and Them</li>
+                  <li>Any Color You Like</li>
+                  <li>Brain Damage</li>
+                  <li>Eclipse</li>
+                </ol>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade moon-------------> 
+      </div>
+      <!------card text-center--------->
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Wall.jpg" height="320" width="320" alt="album cover">
         <h3 class="card-title">The Wall</h3>
-        <p class="card-text">Released in 1979</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" height="320" width="320" alt="tour poster">
+        <p class="card-body">Released in 1979</p>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#bell">Songs</button>
+        <!—Track list--->
+        <div class="modal fade" id="bell">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">The Division Bell</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+                <ol class="text-center">
+                  <li>Another Brick in the Wall, Part 1 </li>
+				  <li>The Happiest Days of Our Lives</li>
+			      <li>Another Brick in the Wall, Part 2</li>
+				  <li> Mother</li>
+				  <li>Goodbye Blue Sky</li>
+				  <li>Empty Spaces</li>
+				  <li>Young Lust</li>
+				  <li> One of My Turns</li>
+				  <li> Don’t Leave Me Now</li>
+				  <li>Another Brick in the Wall, Part 3</li>
+				  <li>Goodbye Cruel World</li>
+				  <li>Hey You</li>
+				  <li>Is There Anybody Out There? </li>
+				  <li> Nobody Home</li>
+				  <li>Vera</li>
+				  <li> Bring the Boys Back Home</li>
+				  <li>Comfortably Numb</li>
+				  <li>The Show Must Go On</li>
+				  <li>In the Flesh</li>
+				  <li>Run Like Hell</li>
+				  <li> Waiting for the Worms</li>
+				  <li>Stop</li>
+				  <li> The Trial</li>
+				  <li> Outside the Wall</li>                
+                </ol>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade bell------------->
+
+      </div>
+      <!------card text-center--------->
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" height="320" width="320" alt="tour poster">
         <h3 class="card-title">Division Bells</h3>
-        <p class="card-text">Released in 1972</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <!-------card text-center---------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Relics_Original.jpg" height="320" width="320" alt="albumcover">
+        <p class="card-body">Released in 1972</p>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#bell">Songs</button>
+        <!—Track list--->
+        <div class="modal fade" id="bell">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">The Division Bell</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+                <ol class="text-center">
+                  <li>Cluster One</li>
+                  <li>What Do You Want from Me</li>
+                  <li> Poles Apart</li>
+                  <li>Marooned</li>
+                  <li>A Great Day for Freedom</li>
+                  <li>Wearing the Inside Out</li>
+                  <li>Take It Back</li>
+                  <li>Coming Back to Life</li>
+                  <li>Keep Talking</li>
+                  <li>Night Light</li>
+				  <li>Lost For Words</li>
+				  <li>High Hopes</li>
+                </ol>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade bell------------->
+
+      </div>
+      <!-------card text-center bg-primary---------->
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Relics_Original.jpg" height="320" width="320" alt="albumcover">
         <h3 class="card-title">Relics</h3>
-        <p class="card-text">Released in 1968</p>
-        <button class="btn albumbtn">Song</button>
-      </div><!-------card text-center----------> 
-    </div><!------row card-deck--------->
-		<div class="row card-deck">
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" height="320" width="320" alt="tour poster">
+        <p class="card-body">Released in 1968</p>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#relics">Songs</button>
+        <!—Track list--->
+        <div class="modal fade" id="relics">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">Relics</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+                <ol class="text-center">
+                  <li>Cluster One</li>
+                  <li>What Do You Want from Me</li>
+                  <li> Poles Apart</li>
+                  <li>Marooned</li>
+                  <li>A Great Day for Freedom</li>
+                  <li>Wearing the Inside Out</li>
+                  <li>Take It Back</li>
+                  <li>Coming Back to Life</li>
+                  <li>Keep Talking</li>
+                  <li>Night Light</li>
+				  <li>Lost For Words</li>
+				  <li>High Hopes</li>
+                </ol>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade bell------------->
+
+      </div>
+      <!-------card text-center bg-primary ----------> 
+    </div>
+    <!------row card-deck--------->
+    <div class="row card-deck">
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" height="320" width="320" alt="tour poster">
         <h3 class="card-title">Division Bells</h3>
-        <p class="card-text">Released in 1963</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Animals.jpg" height="320" width="320" alt="album cover">
+        <p class="card-body">Released in 1963</p>
+        <button class="btn albumbtn card-footer">Songs</button>
+      </div>
+      <!------card text-center--------->
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Animals.jpg" height="320" width="320" alt="album cover">
         <h3 class="card-title">Animals</h3>
-        
-        <p class="card-text">Released in 1968</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="tour poster">
+        <p class="card-body">Released in 1968</p>
+        <button class="btn albumbtn card-footer">Songs</button>
+      </div>
+      <!------card text-center bg-primary--------->
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="tour poster">
         <h3 class="card-title">Atom Heart Mother</h3>
-        <p class="card-text">Released in 1972</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!------card text-center--------->
-      <!-------card text-center---------->
-      <div class="card text-center"> <img class="img-fluid album" src="images/albums/endlessriver.jpg" height="320" width="320" alt="albumcover">
+        <p class="card-body">Released in 1972</p>
+        <button class="btn albumbtn card-footer">Songs</button>
+      </div>
+      <!------card text-center bg-primary---------> 
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/endlessriver.jpg" height="320" width="320" alt="albumcover">
         <h3 class="card-title">Endless River</h3>
-        <p class="card-text">Released in 1968</p>
-        <button class="btn albumbtn">Songs</button>
-      </div><!-------card text-center----------> 
-    </div><!------row card-deck--------->
-		</div><!---------container-fluid----------->
-		<footer class="text-center container-fluid">
-	<i class="fas fa-angle-up fa-3x"><a href="#ba" data-toggle="tooltip" title="TOP"></a></i>
-	
-	<div class="social">
-	<ul class="list-inline social">
-		<li class="list-inline-item"><a href="http://feeds.feedburner.com/brain-damage-news" class="fas fa-rss-square fa-3x"></a></li>
-		<li class="list-inline-item"><a href="facebook.com/pinkfloyd" class="fab fa-facebook-square fa-3x"></a></li>
-		<li class="list-inline-item"><a href="twitter.com/PinkFloyd" class="fab fa-twitter-square fa-3x"></a></li>
-		<li class="list-inline-item"><a href="youtube.com/pinkfloyd" class="fab fa-youtube-square fa-3x"></a></li>
-	</ul>
-	</div><!----------socail---------------->
-	<div class="text-center">
-	<ul class="list-inline">
-		<li class="list-inline-item">This Website uses cookies to improve user experience. By using our Website you consent to all cookies in accordance with our Privacy Policy. We also gather basic contact details from e-mails.
-			<input type="checkbox" checked="checked" name="subscribe"><label>accept</label>
-		
-		</li>
-		<li>&copy; ShandaBiggs@FrancisTuttleWDD</li>
-		</ul>
-		</div><!-------container-------->
-  <!-- Button to Open the Modal -->
-  <a data-toggle="modal" data-target="#myModal">
-    Sources
-  </a>
- <!-- The Modal -->
+        <p class="card-body">Released in 1968</p>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#moon">Songs</button>
+        <!—Track list--->
+        <div class="modal fade" id="river">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">Endless River</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+                <ol class="text-center">
+                  <li>Things Left Unsaid</li>
+                  <li>It's What We Do</li>
+                  <li>Ebb and Flow</li>
+                  <li>Sum</li>
+                  <li>Skins</li>
+                  <li>Unsung</li>
+                  <li>Anisina</li>
+                  <li>The Lost Art of Conversation</li>
+                  <li>On Noodle Stree</li>
+                  <li>Night Light</li>
+				  <li>Allons-y (1)</li>
+				  <li>Autumn '68</li>
+				  <li>Calling</li>
+                </ol>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade moon-------------> 
+      </div>
+      <!------card text-center bg-primary---------> 
+    </div>
+    <!-------card text-center----------> 
+  </div>
+  <!------row card-deck---------> 
+</div>
+<!---------container-fluid----------->
+<footer class="text-center container-fluid"> <i class="fas fa-angle-up fa-3x"><a href="#albumpage" data-toggle="tooltip" title="TOP"></a></i>
+  <div class="social">
+    <ul class="list-inline social">
+      <li class="list-inline-item"><a href="http://feeds.feedburner.com/brain-damage-news" class="fas fa-rss-square fa-3x"></a></li>
+      <li class="list-inline-item"><a href="facebook.com/pinkfloyd" class="fab fa-facebook-square fa-3x"></a></li>
+      <li class="list-inline-item"><a href="twitter.com/PinkFloyd" class="fab fa-twitter-square fa-3x"></a></li>
+      <li class="list-inline-item"><a href="youtube.com/pinkfloyd" class="fab fa-youtube-square fa-3x"></a></li>
+    </ul>
+  </div>
+  <!----------socail---------------->
+  <div class="text-center">
+    <ul class="list-inline">
+      <li class="list-inline-item">This Website uses cookies to improve user experience. By using our Website you consent to all cookies in accordance with our Privacy Policy. We also gather basic contact details from e-mails.
+        <input type="checkbox" checked="checked" name="subscribe">
+        <label>accept</label>
+      </li>
+      <li>&copy; ShandaBiggs@FrancisTuttleWDD</li>
+    </ul>
+  </div>
+  <!-------container--------> 
+  <!-- Button to Open the Modal --> 
+  <a data-toggle="modal" data-target="#myModal"> Sources </a> 
+  <!-- The Modal -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
+      <div class="modal-content"> 
+        
         <!-- Modal Header -->
         <div class="modal-header text-center">
           <h4 class="modal-title">Sources</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div><!----------modal-header-----------------> 
+        </div>
+        <!----------modal-header-----------------> 
         <!-- Modal body -->
         <div class="modal-body">
-			<ul class="text-center">
-				<li><a href="http://www.pinkfloyd.com/">Pink Floyd's official website</a></li>
-				<li><a href="https://en.m.wikipedia.org/wiki/Pink_Floyd">Wikipedia</a></li>
-			</ul>
-        </div><!------------modal-body------------>
-      <!-- Modal footer -->
+          <ul class="text-center">
+            <li><a href="http://www.pinkfloyd.com/">Pink Floyd's official website</a></li>
+            <li><a href="https://en.m.wikipedia.org/wiki/Pink_Floyd">Wikipedia</a></li>
+          </ul>
+        </div>
+        <!------------modal-body------------> 
+        <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div><!------------modal-footer---------------->
-      </div><!-----------modal-content-------------->
-    </div><!---------------modal-dialog modal-dialog-centered------------------->
-    </div>	<!---------------model fade myModel------------->
+        </div>
+        <!------------modal-footer----------------> 
+      </div>
+      <!-----------modal-content--------------> 
+    </div>
+    <!---------------modal-dialog modal-dialog-centered-------------------> 
+  </div>
+  <!---------------model fade myModel-------------> 
 </footer>
-		</div><!-----------------------container----------------------------------->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-  <script src="js/jquery-3.2.1.min.js"></script> 
-  <!-- Include all compiled plugins (below), or include individual files as needed --> 
-  <script src="js/popper.min.js"></script> 
-  <script src="js/bootstrap-4.0.0.js"></script> 	
+<!-----------------------container-----------------------------------> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script> 
 <script>
 $(document).ready(function(){
   // Initialize Tooltip
@@ -173,5 +380,6 @@ $(document).ready(function(){
   });
 })
 </script>
-</body><!-----albums------>
+</body>
+<!-----albums------>
 </html>
