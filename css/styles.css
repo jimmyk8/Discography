@@ -1,18 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
-/*-------Color Pallete 
+/*
+Developer: Shanda Biggs
+Table of Contents
+HEADER - Site name, logo, main menu
+NAVIGATION- search bar, shortlists
+MAINCONTENT - Carousel, Band, Music, Concerts
+News, Sign-up Form
+FOOTER – Copyright, Sources
+MEDIA QUIERIES
+Color Pallete 
 #777   -- pale grey
 #969595 -- pale grey
 #5e5e5e --lighter grey
 #4d4d4d --light grey  
 #3c3c3c -- medium grey
-#2b2b2b -- dark greyt
+#323233 -- charcoal grey
+#2d2d30 -- charcoal grey
+#2b2b2b -- dark grey
 #171515 -- almost black
 #29292c -- dark grey
 #003399 -- bright royal blue
-#323233 -- chargoal
-#2d2d30 -- charcoal grey
-#bdbdbd -- light grey
+#bdbdbd -- off white
 #F731EF -- bright purple
 #FC1B1F -- orange red
 ----------*/
@@ -32,6 +41,10 @@ h1, h2 {
       font-size: 20px;
       color: #111;
   }
+h4 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color:#FF1111;
+}
   .container {
       padding: 80px 120px;
 	  background: #171515;
@@ -40,20 +53,7 @@ h1, h2 {
 	color: #fff !important;
       background-color: #29292c !important;
 }
-#albumpage{
-	color: #003399;
-      background-color: #29292c !important;
-}
-  .person {
-      border: 10px solid transparent;
-      margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
-      opacity: 0.7;
-  }
-  .person:hover {
-      border-color: #f1f1f1;
-  }
+/*----------carousel------------------*/
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
       filter: grayscale(70%); /* make all photos black and white */ 
@@ -63,6 +63,15 @@ h1, h2 {
   .carousel-caption h3 {
       color: #fff !important;
   }
+.carousel img{
+	max-width: 100%;
+	height: auto;
+	
+}
+.pig{
+	z-index: -2;	
+}
+/*------------carousel end--------------*/
 /*---the band----*/
 h1 .band
 {
@@ -127,7 +136,6 @@ h1 .band
       #333
     );
 }
-
 .our-team-main:hover .team-front
 {
 	bottom:-200px;
@@ -138,8 +146,12 @@ h1 .band
 	border-color:#777;
 	transition:0.5s;
 }
+.summary p{
+	padding: 5%;
+	
+}
 /*---the band-END----*/
-/*--------news-------*/
+/*--------music-------*/
 .fa-angle-up{
 	color: #f5f5f5;
 }
@@ -159,19 +171,18 @@ h1 .band
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
   }
-  
   .btn {
       padding: 10px 20px;
       background:
        linear-gradient(
        #F731EF,
        #333);
-      color: #f1f1f1;
+      color: #f5f5f5;
       transition: .2s;
   }
   .btn:hover, .btn:focus {
      border: 1px solid #333;
-	background: url();
+	background: url(../images/vortex.jpg);
      color: #ED2176; 
   }
   .nav-tabs li a {
@@ -235,15 +246,6 @@ h1 .band
   textarea{
       resize: none;
   }
- @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-.img-fluid {
-	
-}
-
 .label-danger {
 	font-size: 10px;
 	color: #fff;
@@ -258,12 +260,6 @@ h1 .band
 .col-sm-4 {
 	border: #333;
 }
-.carousel img{
-	max-width: 100%;
-	height: auto;
-	
-}
-
 .mybtn {
 	margin: 2%;
 	float: right;
@@ -279,10 +275,6 @@ h1 .band
 	margin-top: -3%;
 	position: absolute;
 	z-index: 2;
-}
-h4 {
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	color:#FF1111;
 }
 .social {
 	list-style: none;
@@ -303,10 +295,6 @@ h4 {
 .logo {
 	font-size: 1em;
 }
-.albumbtn {
-
-}
-
 .modal-body {
 	color: #003399;
 	background: #7B7DAC;
@@ -319,7 +307,39 @@ h4 {
 	color:#ED2176;
 	font-size-adjust: auto;
 }
+/*-----------------------albums---------------------------*/
+#albumpage{
+	color: #003399;
+      background-color: #29292c !important;
+}
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
 .album{
 	margin-bottom: 5%;
 	border: thick #7B7DAC;
+}
+/*--------------------albums end----------------------*/
+/*-----------------------------media qeuries-----------------------*/
+@media only screen and (max-width: 1000px){
+	.container{
+		padding: 10px 20px;
+	}
+	.album{
+	   font-size-adjust: auto;
+	}
+	.card{
+		min-width: 320px;
+	}
+	.img-fluid .card{
+		min-width:320;
+		min-height: 320;
+	}
 }
