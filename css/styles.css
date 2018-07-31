@@ -1,24 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
 /*
-Developer: Shanda Biggs
+---Developer: Shanda Biggs
 Table of Contents
 HEADER - Site name, logo, main menu
 NAVIGATION- search bar, shortlists
 MAINCONTENT - Carousel, Band, Music, Concerts
 News, Sign-up Form
 FOOTER – Copyright, Sources
-MEDIA QUIERIES
+MEDIA QUIERIES----
 Color Pallete 
 #777   -- pale grey
-#969595 -- pale grey
-#5e5e5e --lighter grey
-#4d4d4d --light grey  
-#3c3c3c -- medium grey
+#969595 -- soft grey 
 #323233 -- charcoal grey
 #2d2d30 -- charcoal grey
-#2b2b2b -- dark grey
-#171515 -- almost black
+#171515 -- soft black
 #29292c -- dark grey
 #003399 -- bright royal blue
 #bdbdbd -- off white
@@ -185,6 +181,7 @@ h1 .band
 	background: url(../images/vortex.jpg);
      color: #ED2176; 
   }
+
   .nav-tabs li a {
       color: #777;
   }
@@ -221,9 +218,7 @@ h1 .band
       background-color: red !important;
   }
 .myform{
-	background:  linear-gradient(
-       #F731EF,
-       #333);;
+	background:  linear-gradient (#F731EF, #333);;
 	border: thick #333;
 	color: #fff;
 	padding: 4%;
