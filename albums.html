@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Pink Floyd Albums</title>
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -168,8 +168,8 @@
 		  <!—Track list--->
         <div class="modal fade" id="wish">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
-              <div class="modal-header text-center">
+            <div class="modal-content text-center"> 
+              <div class="modal-header">
                 <h4 class="modal-title">Relics</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
@@ -192,19 +192,64 @@
       </div>
       <!------card text-center--------->
       <div class="card text-center bg-primary text-white"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Animals.jpg" height="320" width="320" alt="album cover">
-		  <div class= "card-img-overlay">
-        <h3 class="card-title text-white text-capitalize">Animals</h3>
-			  </div>
+		  <h3 class="card-title text-white card-img-overlay">Animals</h3>
         <p class="card-body">Released in 1968</p>
-        <button class="btn albumbtn card-footer">Songs</button>
+        <button class="btn albumbtn card-footer"  data-toggle="modal" data-target="#animals">Songs</button>
+		   <!—Track list--->
+        <div class="modal fade" id="animals">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">Animals</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+             <iframe src="https://open.spotify.com/embed/album/3b4E89rxzZQ9zkhgKpj8N4" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade bell------------->
+
       </div>
       <!------card text-center bg-primary--------->
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="album cover">
-		  <div class="card-img-overlay text-uppercase">
-        <h3 class="card-title text-white">Atom Heart Mother</h3>
-			  </div>
+      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="album cover">  
+        <h3 class="card-title text-white card-img-overlay">Atom Heart Mother</h3>	 
         <p class="card-body text-white">Released in 1972</p>
-        <button class="btn albumbtn card-footer">Songs</button>
+        <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#mother">Songs</button>
+		  <!—Track list--->
+        <div class="modal fade" id="mother">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+              <div class="modal-header text-center">
+                <h4 class="modal-title">Atom Mother Heart</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!----------modal-header-----------------> 
+              <div class="modal-body">
+              <iframe src="https://open.spotify.com/embed/album/2cUpAOlQjV5uSjkWj5bEQY" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <!------------modal-body------------> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              <!------------modal-footer----------------> 
+            </div>
+            <!-----------modal-content--------------> 
+          </div>
+          <!---------------modal-dialog modal-dialog-centered-------------------> 
+        </div>
+        <!---------------model fade bell------------->
+
+
       </div>
       <!------card text-center bg-primary---------> 
       <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/endlessriver.jpg" alt="album cover">
@@ -215,7 +260,7 @@
         <div class="modal fade" id="river">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content"> 
-              <div class="modal-header text-center">
+              <div class="modal-header">
                 <h4 class="modal-title">Endless River</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
