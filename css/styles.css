@@ -218,7 +218,7 @@ h1 .band
       background-color: red !important;
   }
 .myform{
-	background:  linear-gradient (#F731EF, #333);;
+	background: linear-gradient(#F731EF, #333);
 	border: thick #333;
 	color: #fff;
 	padding: 4%;
@@ -287,8 +287,9 @@ h1 .band
 	background: rgba(0,0,0,0.3);
 	margin-top: 2%;
 }
-.logo {
-	font-size: 1em;
+.logo {	
+	z-index: 3;
+	padding: 2%;
 }
 .modal-body {
 	color: #003399;
@@ -337,4 +338,25 @@ h1 .band
 		min-width:320;
 		min-height: 320;
 	}
+}
+.droplink {
+	font-size: .75rem;
+}
+.dropdown-menu {
+	color: #777;
+	background: #000;
+}
+
+.smallnav{
+	display: none;
+}
+@media only screen and (max-width: 900px){
+.smallnav {
+	float: right;
+	display: flex;
+	}
+}
+
+.bigBrand {
+	z-index: 3;
 }

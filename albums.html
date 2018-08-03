@@ -9,29 +9,28 @@
 <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
 </head>
 <body id="albumpage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-default nav-bar-fixed-top">
+<nav class="navbar navbar-expand-sm navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><img src="images/b&whammers.png" alt="logo" class="img-fluid rounded" width="40px"></button>
-      <a class="navbar-brand logo" href="#myPage">PINK FLOYD</a> </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html">BAND</a></li>
-        <li><a href="index.html">TOUR</a></li>
-        <li><a href="index.html">NEWS</a></li>
-        <li><a href="#albumpage">MUSIC</a></li>
-        <li><a href="index.html">FAN CLUB</a></li>
-        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
+      <a class="navbar-brand" href="#myPage">PINK FLOYD</a> </div><!-------navbar-header-------->
+    <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#bandpage">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#band">BAND</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tour">TOUR</a></li>
+		 <li class="nav-item"><a class="nav-link" href="#news">NEWS</a></li>
+		  <li class="nav-item"><a class="nav-link" href="albums.html">MUSIC</a></li>
+        <li class="nav-link dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#albumpage">ALBUMS</a></li>
-            <li><a href="#">TIMELINE</a></li>
-            <li><a href="index.html/#tour">TICKETS</a></li>
+            <li class="droplink"><a class="nav-link" href="#contact">FAN CLUB</a></li>
+            <li class="droplink"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="droplink"><a class="nav-link" href="#">ALBUMS</a></li>
           </ul>
           <!-----.dropdown-menu-----> 
         </li>
         <!---.dropdown---->
-        <li><a href="#"><i class="fas fa-search"></i></a></li>
+        <li><a href="#"><span><i class="fas fa-search"></i></span></a></li>
       </ul>
       <!-----.nav----> 
     </div>
@@ -41,7 +40,7 @@
   <h1 class="text-center">Albums</h1>
   <div class="container">
     <div class="row card-deck text-white">
-      <div class="card bg-primary text-center"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Dark_Side_of_the_Moon.jpg" alt="album cover">
+      <div class="card bg-primary text-center"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Dark_Side_of_the_Moon.jpg" alt="album cover">
         <h3 class="card-title card-img-overlay text-white">Dark Side of the Moon</h3>
         <p class="card-body">Released in 1993</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#moon">Songs</button>
@@ -70,7 +69,7 @@
         <!---------------model fade moon-------------> 
       </div>
       <!------card text-center--------->
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Wall.jpg" alt="album cover">
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_The_Wall.jpg" alt="album cover">
         <p class="card-body">Released in 1979</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#wall">Songs</button>
         <!—Track list--->
@@ -99,7 +98,7 @@
 
       </div>
       <!------card text-center--------->
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" height="320" alt="tour poster">
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_The_Division_Bell.jpg" alt="tour poster">
         <h3 class="card-title text-white card-img-overlay">Division Bells</h3>
         <p class="card-body">Released in 1972</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#bell">Songs</button>
@@ -129,14 +128,14 @@
 
       </div>
       <!-------card text-center bg-primary---------->
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Relics_Original.jpg" height="320" width="320" alt="albumcover">
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Relics_Original.jpg" alt="albumcover">
         <p class="card-body">Released in 1968</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#relics">Songs</button>
         <!—Track list--->
         <div class="modal fade" id="relics">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content"> 
-              <div class="modal-header text-center">
+              <div class="modal-header">
                 <h4 class="modal-title">Relics</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
@@ -161,7 +160,7 @@
     </div>
     <!------row card-deck--------->
     <div class="row card-deck">
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Wish_You_Were_Here.jpg" height="320" width="320" alt="album cover">
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Wish_You_Were_Here.jpg" alt="album cover">
         <h3 class="card-title card-img-overlay text-white">Wish You Were Here</h3>
         <p class="card-body text-white">Released in 1963</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#wish">Songs</button>
@@ -191,7 +190,7 @@
 
       </div>
       <!------card text-center--------->
-      <div class="card text-center bg-primary text-white"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Animals.jpg" height="320" width="320" alt="album cover">
+      <div class="card text-center bg-primary text-white"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Animals.jpg" alt="album cover">
 		  <h3 class="card-title text-white card-img-overlay">Animals</h3>
         <p class="card-body">Released in 1968</p>
         <button class="btn albumbtn card-footer"  data-toggle="modal" data-target="#animals">Songs</button>
@@ -221,7 +220,7 @@
 
       </div>
       <!------card text-center bg-primary--------->
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="album cover">  
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Atom_Heart_Mother.jpg" alt="album cover">  
         <h3 class="card-title text-white card-img-overlay">Atom Heart Mother</h3>	 
         <p class="card-body text-white">Released in 1972</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#mother">Songs</button>
@@ -252,7 +251,7 @@
 
       </div>
       <!------card text-center bg-primary---------> 
-      <div class="card text-center bg-primary"> <img class="img-fluid album" src="images/albums/endlessriver.jpg" alt="album cover">
+      <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/endlessriver.jpg" alt="album cover">
         <h3 class="card-title card-img-overlay text-white">Endless River</h3>
         <p class="card-body text-white">Released in 1968</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#river">Songs</button>
