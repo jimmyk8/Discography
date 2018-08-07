@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width-device-width, initial-scale=1">
 <title>Pink Floyd Discography</title>
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
@@ -10,33 +11,28 @@
 <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">	
 </head>
 <body id="bandpage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-expand-sm navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle active smallnav" data-toggle="collapse" data-target="#myNavbar"><img src="images/b&whammers.png" alt="logo" class="img-fluid rounded menubutton" width="40px"></button>
-      <a class="navbar-brand logo" href="#myPage"><h2 class="bigBrand">PINK FLOYD</h2></a> </div><!-------navbar-header-------->
-    <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#bandpage">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="#band">BAND</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tour">TOUR</a></li>
-		 <li class="nav-item"><a class="nav-link" href="#news">NEWS</a></li>
-		  <li class="nav-item"><a class="nav-link" href="albums.html">MUSIC</a></li>
-        <li class="nav-item nav-link dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="#contact">FAN CLUB</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#">ALBUMS</a></li>
-          </ul>
-          <!-----.dropdown-menu-----> 
-        </li>
-        <!---.dropdown---->
-        <li><a href="#"><span><i class="fas fa-search"></i></span></a></li>
-      </ul>
-      <!-----.nav----> 
-    </div>
-  </div>
-</nav>
+	<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand bigBrand" href="index.html"><h1 class="bigBrand"> PINK FLOYD</h1></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expand="false" aria-label="Toggle navigation"><img src="images/b&whammers.png" class="btn-sm navbar-toggler menulogo" alt="hammer logo" ></button>
+	<div class="collapse navbar-collapse" id="navbarContent">
+	    <ul class="navbar-nav mr-auto">
+			<li class="nav-item active"><a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a></li>
+			<li><a class="nav-link" href="#band">BAND</a>
+             </li>
+			<li><a class="nav-link" href="albums.html">MUSIC</a></li>
+            <li> <a class="nav-link" href="#tour">TOUR</a>
+             </li>
+			<li><a class="nav-link" href="#contact">FANCLUB</a>
+             </li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</div>
+	</nav>
+	</div><!---container-fluid---->	
 <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
   <!-- Indicators -->
   <ul class="carousel-indicators">
