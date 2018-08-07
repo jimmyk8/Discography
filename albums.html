@@ -10,16 +10,16 @@
 </head>
 <body id="albumpage" data-spy="scroll" data-target=".navbar" data-offset="50">
 <div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNav">
 	<a class="navbar-brand bigBrand" href="index.html"><h1 class="bigBrand"> PINK FLOYD</h1></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expand="false" aria-label="Toggle navigation"><img src="images/b&whammers.png" class="btn-sm navbar-toggler menulogo" alt="hammer logo" ></button>
 	<div class="collapse navbar-collapse" id="navbarContent">
 	    <ul class="navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a></li>
-			<li><a class="nav-link" href="index.html#band">BAND</a>
+			<li class="nav-item"><a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a></li>
+			<li><a class="nav-link" href="index.html">BAND</a>
              </li>
-			<li><a class="nav-link" href="#music">MUSIC</a></li>
-            <li> <a class="nav-link" href="index.html#tour">TOUR</a>
+			<li><a class="nav-link active" href="#music">MUSIC</a></li>
+            <li> <a class="nav-link" href="index.html">TOUR</a>
              </li>
 			<li><a class="nav-link" href="#contact">FANCLUB</a>
              </li>
@@ -127,7 +127,7 @@
       <div class="card text-center bg-primary"> <img class="card-img-top album" src="images/albums/Pink_Floyd_-_Relics_Original.jpg" alt="albumcover">
         <p class="card-body">Released in 1968</p>
         <button class="btn albumbtn card-footer" data-toggle="modal" data-target="#relics">Songs</button>
-        <!—Track list--->
+        <!—--Track list--->
         <div class="modal fade" id="relics">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -281,6 +281,45 @@
   <!------row card-deck---------> 
 </div>
 <!---------container-fluid----------->
+	<div class="container myform" id="contact">
+  <h3 class="text-center">JOIN OUR FANCLUB</h3>
+  <div class="row test">
+    <div class="col-md-4 align-content-center">
+	  <p class="text-center"><em>SEND US A MESSAGE</em></p>
+      <p><span><i class="far fa-envelope-open"> pinkfloyd_fanclub@yahoo.com</i></span></p>
+    </div><!--------------->
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div><!--------col-sm-6 form-group----------->
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div><!------------col-sm-6 form-group---------------->
+      </div><!-------row-------->
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+		 <div class="form-check-inline">
+      <label class="form-check-label" for="check1">
+        <input type="checkbox" class="form-check-input" id="check1" name="Plain Text" value="something" checked>Plain Text
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="HTML" value="something">HTML
+      </label>
+    </div>
+      <div class="row">
+        <div class="col-md-12 form-group">
+			 <input type="checkbox" checked="checked" name="subscribe"><label> Weekly Newsletter
+            </label><br>
+			<input type="checkbox" checked="checked" name="join"><label> Join the Fanclub
+            </label>
+          <button class="btn align-right mybtn" type="submit">Subscribe</button>
+        </div><!-------col-md-12 form-group-------->
+      </div><!------row--------->
+    </div><!------col-md-8--------->
+  </div><!------row test--------->
+</div><!------container myform #contact--------->
 <footer class="text-center container-fluid"> <a class="fas fa-angle-up fa-3x" href="#up" data-toggle="tooltip" title="TOP"></a>
   <div class="social">
     <ul class="list-inline social">
@@ -293,7 +332,7 @@
   <!----------socail---------------->
   <div class="text-center">
     <ul class="list-inline">
-      <li class="list-inline-item">This Website uses cookies to improve user experience. By using our Website you consent to all cookies in accordance with our Privacy Policy. We also gather basic contact details from e-mails.<br>
+      <li class="list-inline-item">This Website uses cookies to improve user experience. By using this Website you consent to all cookies in accordance with our Privacy Policy.<br>
         <input type="checkbox" checked="checked" name="subscribe">
         <label>accept</label>
       </li>

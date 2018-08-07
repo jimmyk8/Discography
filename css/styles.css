@@ -49,11 +49,40 @@ h4 {
 	color: #fff !important;
       background-color: #29292c !important;
 }
+/*-----------------Navbar----------------------*/
+.bigBrand {
+	font-size: 228%;
+	color: #FF1111;
+}
+.menulogo {
+	width: 40%;
+	border: thin #F731EF;
+}
+
+.navbar {
+	opacity: 0.8;
+	margin-bottom: 0;
+	border: 0;
+}
+
+#myNav {
+	z-index: 1;
+}
+#search{
+	margin: auto;
+}
+
+/*-----------------Navbar End-----------------*/
+
 /*----------carousel------------------*/
+  #myCarousel{
+	  margin-top: -2%;
+}
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
       filter: grayscale(70%); /* make all photos black and white */ 
       width: 100%; /* Set width to 100% */
+	  max-height: 650px;
       margin: auto;
   }
   .carousel-caption h3 {
@@ -322,18 +351,4 @@ h1 .band
 		min-height: 320;
 	}
 	
-}
-.bigBrand {
-	font-size: 228%;
-	color: #FF1111;
-}
-.menulogo {
-	width: 40%;
-	border: thin #F731EF;
-}
-
-.navbar {
-	opacity: 0.8;
-	margin-bottom: 0;
-	border: 0;
 }
